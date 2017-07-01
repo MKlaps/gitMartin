@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="TESTstyle.css" />
+</head>
+<body>
+    <header>
+            <!-- Mobile menu-->
+            <div class="mmenu-menu">
+                <ul>
+                <li><a href="#">Link Left 1</a></li>
+                <li><a href="#">Link Left 2</a></li>
+                <li><a href="#">Link Left 3</a></li>
+                 </ul>
+            </div>
+            <!-- Mobile menu end-->
+            <div class="col-xs-12 container-fluid top-line-gr">
+                <a href="#" class="App-name">App-name</a>
+            <!-- Mobile burger menu-->
+
+                <div id="mmenu" class="mmenu-icon-wrapper">
+                    <span class="mmenu-icon"></span>
+                </div>
+            <!-- Mobile burger menu end-->
+            </div>
+            <div class="col-xs-12 hidden-xs container-fluid top-line-menu">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+            </div>
+            <div class="col-xs-12" style="padding: 10px 20px">
+                <div class="col-sm-3 dark-sqr hidden-xs">
+                         <div class="pic-main"><img src="#" alt="#"></div>
+                </div>
+                <div class="col-sm-9 col-xs-12 container-fluid nadp-1"><a href="#">Nadp-1</a></div>
+                <div class="col-sm-9 col-xs-12 container-fluid nadp-2"><a href="#">Nadp-2</a></div>
+                <div class="col-sm-9 col-xs-12 container-fluid nadp-3"><a href="#">Nadp-3</a></div>
+            </div>
+            <div class="col-xs-12" style="padding: 0px 20px">
+
+                <div class="col-sm-3 light-sqr hidden-xs">
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="#">Link Left 1</a></li>
+                            <li><a href="#">Link Left 2</a></li>
+                            <li><a href="#">Link Left 3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <img src="images/les.png" alt="#" style="position: absolute; top: 250px; left: 15px" class="hidden-xs">
+                <div class="col-sm-9 col-xs-12 container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra ipsum elementum diam posuere commodo eu sed odio. Phasellus a purus augue. Nam sit amet turpis at lectus auctor tristique. Nam in vehicula purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras placerat nisl aliquam tellus efficitur finibus. Phasellus consequat accumsan eleifend. Aenean maximus, arcu sed varius auctor, quam urna aliquet lectus, vel maximus velit ante non lorem. Nam eget ex pulvinar odio finibus commodo ac quis ipsum.
+
+                    Vestibulum mattis sollicitudin aliquet. Pellentesque accumsan elit erat, vitae congue dolor dignissim vitae. Suspendisse sagittis lacus at faucibus pellentesque. Sed elementum tempor vestibulum. Maecenas lobortis lacus eget sem dictum, vitae efficitur est ornare. Vestibulum risus lorem, ornare at eros eu, efficitur ullamcorper leo. Sed eu rhoncus dolor. Aenean consequat et quam sed ullamcorper.
+
+                    Proin fringilla tincidunt purus, vitae tempus diam facilisis a. Sed condimentum dolor urna, quis volutpat mi venenatis eu. Vivamus sit amet mattis massa. Curabitur suscipit tincidunt lectus et blandit. Nullam rutrum lectus nec urna sollicitudin gravida. Integer ac tempus ante. Phasellus in dictum justo, non lacinia felis. Nunc sed quam arcu. Nam posuere tincidunt est ac eleifend. Aliquam condimentum id velit at mollis. Aenean metus sem, efficitur varius leo quis, dapibus laoreet est. Pellentesque nulla ex, dictum vehicula ligula in, semper molestie orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ullamcorper euismod purus id condimentum.
+
+                    Phasellus placerat ipsum ut viverra tincidunt. Vivamus elementum mi id lorem rhoncus vehicula. Nam vulputate dui at velit venenatis, eget scelerisque orci ornare. Suspendisse efficitur, purus ac molestie blandit, erat lectus mollis diam, at pellentesque ante enim at orci. In sit amet justo mollis, aliquet erat et, iaculis neque. Nulla sollicitudin nibh ac dui aliquam posuere. Ut nisi ligula, egestas a risus nec, efficitur imperdiet lectus.
+
+                    Vestibulum eu lacus scelerisque, maximus metus nec, feugiat odio. Curabitur vitae nunc purus. Proin in justo vel augue laoreet consequat et a eros. Mauris mi odio, tristique sit amet purus nec, vulputate posuere ligula. Nam nec euismod sem. Cras id pulvinar ante, at molestie augue. Vivamus non arcu imperdiet, mattis nisi eget, sollicitudin libero.
+                </div>
+
+
+            </div>
+    </header>
+    <script>
+        document.getElementById('mmenu').addEventListener('click', checkNav);
+        window.addEventListener("keyup", function(e) {
+            if (e.keyCode == 27) closeNav();
+        }, false);
+
+        function checkNav() {
+            if (document.body.classList.contains('mmenu-active')) {
+                closeNav();
+            } else {
+                openNav();
+            }
+        }
+
+        function closeNav() {
+            document.body.classList.remove('mmenu-active');
+        }
+
+        function openNav() {
+            document.body.classList.add('mmenu-active');
+        }
+    </script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+.top-line-gr {
+    background-color: #94C11C;
+    min-height: 30px;
+}
+.top-line-gr a {
+    font-family: "Trebuchet MS", cursive, Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 13px;
+    line-height: 30px;
+}
+.top-line-menu {
+    background-color: #F1F2E4;
+    min-height: 30px;
+}
+.top-line-menu ul {
+    margin: 0px;
+    padding: 0px;
+    min-height: 30px;
+}
+.top-line-menu ul li {
+    display: inline;
+    line-height: 30px;
+
+    text-transform: uppercase;
+    padding-right: 25px;
+}
+.top-line-menu ul li a {
+    font-family: "Trebuchet MS", cursive, Arial, sans-serif;
+    color: #666666;
+    text-decoration: none;
+}
+.dark-sqr{
+    background-color: #0C441D;
+    height: 175px;
+    width: 180px;
+}
+.pic-main img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 175px;
+    max-width: 180px;
+}
+.nadp-1 a {
+    text-decoration: none;
+    font-family: "Trebuchet MS", cursive, Arial, sans-serif;
+    color: #94C11C;
+    font-size: 13px;
+    font-weight: bold;
+}.nadp-2 a {
+    text-decoration: none;
+    font-family: "Trebuchet MS", cursive, Arial, sans-serif;
+    color: #94C11C;
+    font-size: 47px;
+    font-weight: bold;
+}.nadp-3 a {
+    text-decoration: none;
+    font-family: "Trebuchet MS", cursive, Arial, sans-serif;
+    color: #0C441D;
+    font-size: 33px;
+    font-weight: bold;
+}
+ .light-sqr {
+     background-color: #94C11C;
+     height: 249px;
+     width: 180px;
+ }
+ .main-menu ul{
+     list-style-type: none;
+     padding: 5px 0px;
+ }
+ .main-menu ul li a{
+     font-family: "Trebuchet MS", cursive, Arial, sans-serif;
+     font-size: 13px;
+     font-weight: bold;
+     color: white;
+     text-decoration: none;
+ }
+ .main-menu ul li a:hover{
+     color: #0C441D;
+ }
+ .main-menu ul li a:active{
+     color: #0C441D;
+ }
+body {
+    background-color: #F3F6E3;
+}
+
+
+
+
+
+ /*burger menu*/
+.mmenu-icon-wrapper {
+    position: fixed;
+    top: 0.075em;
+    right: 2em;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    z-index: 3;
+
+}
+
+.mmenu-icon,
+.mmenu-icon:before,
+.mmenu-icon:after {
+    content: '';
+    position: absolute;
+    border-radius: 1em;
+    height: 2px;
+    width: 26px;
+    background: #0C441D;
+    transition: all 0.2s ease
+}
+
+.mmenu-icon {
+    top: 0.75em
+}
+
+.mmenu-icon:before {
+    top: -0.50em
+}
+
+.mmenu-icon:after {
+    top: 0.50em
+}
+
+.mmenu-active .mmenu-icon {
+    background: transparent;
+    transform: rotate(-135deg)
+}
+
+.mmenu-active .mmenu-icon:before,
+.mmenu-active .mmenu-icon:after {
+    top: 0
+}
+
+.mmenu-active .mmenu-icon:before {
+    transform: rotate(90deg)
+}
+
+.mmenu-active .mmenu-icon,
+.mmenu-active .mmenu-icon:before,
+.mmenu-active .mmenu-icon:after {
+    background: white;
+}
+
+.mmenu-menu {
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    z-index: 3;
+}
+
+.mmenu-menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', cursive, Arial, sans-serif;
+}
+
+.mmenu-active .mmenu-menu {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.mmenu-menu ul {
+    display: block;
+    transition: all 0.4s ease;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.mmenu-active .mmenu-menu ul {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mmenu-menu, .mmenu-icon-wrapper {
+        display: none !important;
+    }
+}
+
+ /*burger menu end*/
+
